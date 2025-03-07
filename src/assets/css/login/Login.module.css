@@ -1,0 +1,107 @@
+.container_login {
+    background-image: url('public/bg_login.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-content: center;
+    width: 100vw;
+    justify-items: center;
+}
+.logo {
+    display: flex;
+    gap:  10px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.logo_icon {
+    font-size: 40px;
+    width: 40px;
+}
+
+.logoweb {
+    display: none;
+}
+
+.input_username {
+    display:  flex;
+    padding-bottom: 10px;
+}
+
+
+.form_loginButton {
+    width: 125px;
+    box-shadow: 1px 1px 1px #000;
+
+}
+
+.title_formLogin {
+    padding: 30px 0px 50px 0px;
+}
+
+.link_register {
+    padding: 30px 0px 0px 0px;
+    float: right;
+}
+
+.input_password {
+    display: flex;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+
+.input_wrapper {
+    position: relative;
+}
+
+.input_field {
+    width: 250px;
+    padding-right: 10px;
+}
+
+.icon_password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    z-index: 1000;
+}
+
+.form_login {
+    border: 1px solid #999;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #000;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    box-sizing: border-box;
+    
+}
+
+.input_email {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.input_repassword {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    align-items: flex-start;
+}
+
+.label {
+    display: flex;
+    width: 90px;
+    justify-items: end;
+}
