@@ -17,15 +17,18 @@ const Login = () => {
 
     return(
         <div className={styles.container_login}>
+            <div className={styles.logoweb}>
+                <DingtalkOutlined className={styles.logoweb_icon} />
+                <h4>Fabook giúp bạn kết nối và chia sẻ</h4> 
+                <h4>với mọi người trong cuộc sống của bạn.</h4>
+            </div>
             <div style={{minWidth: 300, maxWidth : 400 , margin : 0 , padding : 0}}>
                 <div className={styles.logo}>
                     <DingtalkOutlined className={styles.logo_icon}/>
                     <h1>Fabook</h1>
                 </div>
 
-                <div className={styles.logoweb}>
-                    <DingtalkOutlined className={styles.logoweb_icon} />
-                </div>
+                
                 
                 <div className={styles.form_login}>
                     <Form

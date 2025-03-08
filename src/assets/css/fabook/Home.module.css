@@ -1,0 +1,30 @@
+:root {
+    --bg : #46484b;
+    --bg-container : #252728
+}
+
+.container {
+    position: relative;
+    background: var(--bg-container);
+    height: 100vh;
+    width: 100vw;
+    color: aliceblue;
+}
+
+.container_header {
+    height: 72px;
+    position: fixed;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid #000;
+    z-index: 100;
+}
+
+.container_statuspost {
+    padding-top: 88px;
+    border-radius: 10px;
+}
+
+.container_story {
+    padding-top: 20px;
+}

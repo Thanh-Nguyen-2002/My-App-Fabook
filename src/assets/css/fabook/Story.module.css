@@ -1,0 +1,66 @@
+.story_create {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-width: 120px;
+}
+
+.story_create__avatar {
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+
+.story_create__avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(90%);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.story_create_title {
+    padding-top: 25px;
+}
+
+.story_create_icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , 50%);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #035ed5;
+    align-content: center;
+    border: 3px solid #343333;
+    cursor: pointer;
+}
+
+.story {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.story_view_item {
+    width: 120px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+
+.story_view {
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    width: auto;
+    min-width: calc(100% - 200px);
+}

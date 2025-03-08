@@ -105,3 +105,21 @@
     width: 90px;
     justify-items: end;
 }
+
+@media (min-width : 1024px)  {
+    .container_login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoweb_icon {
+        display: block;
+        font-size: 150px;
+    }
+
+    .logoweb {
+        display: block;
+        padding: 30px 100px 0px 0px;
+    }
+}

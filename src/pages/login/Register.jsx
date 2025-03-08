@@ -16,16 +16,17 @@ const Resgiter = () => {
     const [isShowRePassword, setIsShowRePassword] = useState(false);
     return(
         <div className={styles.container_login}>
+            <div className={styles.logoweb}>
+                <DingtalkOutlined className={styles.logoweb_icon} />
+                <h4>Fabook giúp bạn kết nối và chia sẻ</h4> 
+                <h4>với mọi người trong cuộc sống của bạn.</h4>
+            </div>
             <div style={{minWidth : 380 , maxWidth : 400}}>
                 <div className={styles.logo}>
                     <DingtalkOutlined className={styles.logo_icon}/>
                     <h1>Fabook</h1>
                 </div>
 
-                <div className={styles.logoweb}>
-                    <DingtalkOutlined className={styles.logoweb_icon} />
-                </div>
-                
                 <div className={styles.form_login}>
                     <Form
                         name="normal_login"
@@ -126,7 +127,7 @@ const Resgiter = () => {
                     
                 </div>
                 <div className={styles.link_register}>
-                    <h4>Bạn đã có tài khoản <Link to={`/login`}>Đăng nhập</Link></h4>
+                    <h4>Bạn đã có tài khoản <Link to={`/`}>Đăng nhập</Link></h4>
                 </div>
             </div>
         </div>
