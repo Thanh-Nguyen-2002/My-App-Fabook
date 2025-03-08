@@ -56,8 +56,8 @@ const Story = () => {
                 {data.map((item) => (
                     <div key={item.id} className={styles.story_view_item}>
                         <img src={item.new} alt="Story" />
-                        <h4>{item.name}</h4>
-                        <div>
+                        <h4 className={styles.view_story_name}>{item.name}</h4>
+                        <div className={styles.view_story_avatar}>
                             <img src={item.img_daidien} alt="Ảnh đại diện" />
                         </div>
                     </div>

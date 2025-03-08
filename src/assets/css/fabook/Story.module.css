@@ -54,6 +54,7 @@
     border: 1px solid white;
     border-radius: 8px;
     flex-shrink: 0;
+    position: relative;
 }
 
 
@@ -63,4 +64,33 @@
     white-space: nowrap;
     width: auto;
     min-width: calc(100% - 200px);
+}
+
+.story_view_item img {
+    width: 100%;
+    height: 100%;
+}
+
+.view_story_name {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.view_story_avatar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    z-index: 80;
+    border: 4px solid #035ed5;
+    width: 35px;
+    height: 35px;
+}
+
+.view_story_avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
