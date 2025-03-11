@@ -1,0 +1,60 @@
+.container {
+    padding: 16px;
+}
+
+.List_function {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.function_item {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.function_item p {
+    margin: 0;
+}
+
+.function_item:hover {
+    cursor: pointer;
+    background: #6d6d6d;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.img_fun {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.img_fun img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.box_icon {
+    width: 30px;
+    border-radius: 50%;
+    background: #3a3939;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+.icon_down {
+    font-size: 16px;
+}
+
+.groupSection {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    padding-top: 16px;
+}

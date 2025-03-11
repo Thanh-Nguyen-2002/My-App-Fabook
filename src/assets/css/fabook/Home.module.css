@@ -6,7 +6,7 @@
 .container {
     position: relative;
     background: var(--bg-container);
-    height: 100vh;
+    height: auto;
     width: 100vw;
     color: aliceblue;
 }
@@ -21,10 +21,19 @@
 }
 
 .container_statuspost {
-    padding-top: 88px;
     border-radius: 10px;
 }
 
 .container_story {
     padding-top: 20px;
+}
+
+.container_main {
+    padding: 80px 0px 0px 0px;
+    width: 99.2vw;
+    margin: 0;
+}
+
+* {
+    outline: 1px solid red;
 }

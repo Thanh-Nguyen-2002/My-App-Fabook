@@ -16,7 +16,7 @@ const StatusPost = () => {
                         <img src="/anh_dai-dien.jpg" alt="Ảnh đại diện" />
                     </div>
                     <div className={styles.post_input__text}>
-                        <h4>Thành ơi, bạn đang nghĩ gì thế?</h4>
+                        <h5 style={{margin : 0}}>Thành ơi, bạn đang nghĩ gì thế?</h5>
                     </div>
                 </div>
                 <div className={styles.post_input__hr}></div>

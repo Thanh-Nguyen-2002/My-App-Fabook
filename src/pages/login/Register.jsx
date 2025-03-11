@@ -127,7 +127,7 @@ const Resgiter = () => {
                     
                 </div>
                 <div className={styles.link_register}>
-                    <h4>Bạn đã có tài khoản <Link to={`/`}>Đăng nhập</Link></h4>
+                    <h5>Bạn đã có tài khoản <Link to={`/`}>Đăng nhập</Link></h5>
                 </div>
             </div>
         </div>

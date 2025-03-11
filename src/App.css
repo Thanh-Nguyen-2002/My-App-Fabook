@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
   margin: 0;
   padding: 0;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -41,8 +41,8 @@
   color: #888;
 }
 
-*, a, p, div {
+*, a, p, div, h4 {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }

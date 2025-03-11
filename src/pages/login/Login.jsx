@@ -87,7 +87,7 @@ const Login = () => {
                     
                 </div>
                 <div className={styles.link_register}>
-                    <h4>Bạn chưa có tài khoản? <Link to={`/register`}>Tạo tài khoản</Link></h4>
+                    <h5>Bạn chưa có tài khoản? <Link to={`/register`}>Tạo tài khoản</Link></h5>
                 </div>
             </div>
         </div>

@@ -18,10 +18,6 @@ const Header = () => {
                 </div>
                 <div className={styles.container_left_icon}>
                     <SearchOutlined />
-                    {/* <Input 
-                        prefix = {<SearchOutlined />}
-                        className={styles.container_left_input}
-                    />  */}
                 </div>
             </div>
             <div className={styles.container_right}>
