@@ -9,11 +9,59 @@ import {
     MailOutlined
 } from "@ant-design/icons";
 import styles from "../../assets/css/login/Login.module.css"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import axios from "axios";
+import { toast } from "react-toastify";
 const Resgiter = () => {
     const [isloading , setIsLoading] = useState(false);
     const [isShow, setIsShow] = useState(false);
     const [isShowRePassword, setIsShowRePassword] = useState(false);
+    const navigate = useNavigate();
+
+    const handleRegister = async(value) => {
+        const {
+            username,
+            password,
+            repassword,
+            email,
+            fullname
+        } = value;
+
+        if(password != repassword) {
+            toast.error("Mật khẩu chưa khớp. Vui lòng nhập lại !");
+        }else {
+            setIsLoading(true);
+            try {
+                const res = await axios.post("https://localhost:5000/api/Auth/register",
+                    {
+                        username,
+                        password,
+                        repassword,
+                        email,
+                        fullname
+                    },
+                    // Token
+                    // {
+                    //     headers: {
+                    //         Authorization : `Bearer ${token}`,
+                    //         "Content-Type" : "application/json"
+                    //     }
+                    // }
+                );
+                const result = res.data
+                navigate("/");
+                toast.success(`Chúc mừng ${result.data.fullname} ${result.message}`);
+            }
+            catch (err) {
+                toast.error(err?.response?.data.message);
+            }
+            finally{
+                setIsLoading(false);
+            }
+        }
+    }
+
+
     return(
         <div className={styles.container_login}>
             <div className={styles.logoweb}>
@@ -30,6 +78,7 @@ const Resgiter = () => {
                 <div className={styles.form_login}>
                     <Form
                         name="normal_login"
+                        onFinish={handleRegister}
                     >
                         <div className={styles.title_formLogin}>
                             <h2>Fabook Đăng ký</h2>
@@ -64,36 +113,34 @@ const Resgiter = () => {
                                     type={isShow ? "text" : "password"}
                                     className={styles.input_field}
                                 />
-                                <span className={styles.icon_password} onClick={() => setIsShow(!isShow)}>
-                                    {isShow ? <EyeOutlined /> : <EyeInvisibleOutlined />}
-                                </span>
+                                
                             </Form.Item>
+                            <span className={styles.icon_password} onClick={() => setIsShow(!isShow)}>
+                                {isShow ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+                            </span>
                         </div>
 
                         <div className={styles.input_password}>
                             <div className={styles.label}>Re-password: </div>
                             <Form.Item
                                 className={styles.input_wrapper}
-                                name="password"
+                                name="repassword"
                                 rules={[
                                     { required: true, message: "Vui lòng nhập Password của bạn" },
-                                    { 
-                                        pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/, 
-                                        message: "Mật khẩu phải có ít nhất 8 ký tự, gồm chữ hoa, chữ thường, số và ký tự đặc biệt!"
-                                    }
                                 ]}
                                 
                             >
                                 <Input
                                     prefix={<LockOutlined />}
                                     placeholder="Re-password"
-                                    type={isShow ? "text" : "password"}
+                                    type={isShowRePassword ? "text" : "password"}
                                     className={styles.input_field}
                                 />
-                                <span className={styles.icon_password} onClick={() => setIsShowRePassword(!isShowRePassword)}>
-                                    {isShowRePassword ? <EyeOutlined /> : <EyeInvisibleOutlined />}
-                                </span>
+                                
                             </Form.Item>
+                            <span className={styles.icon_password} onClick={() => setIsShowRePassword(!isShowRePassword)}>
+                                {isShowRePassword ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+                            </span>
                         </div>
 
                         <div className={styles.input_email}>
@@ -108,6 +155,22 @@ const Resgiter = () => {
                                 prefix={<MailOutlined />}
                                 placeholder="Email"
                                 type="email"
+                                className={styles.input_field}
+                                />
+                            </Form.Item>
+                        </div>
+                        <div className={styles.input_email}>
+                            <div className={styles.label}>FullName: </div>
+                            <Form.Item
+                                className={styles.input_wrapper}
+                                name="fullname"
+                                rules={[{ required: true, message: "Vui lòng nhập FullName của bạn" }]}
+                                
+                            >
+                                <Input
+                                prefix={<UserOutlined />}
+                                placeholder="FullName"
+                                type="text"
                                 className={styles.input_field}
                                 />
                             </Form.Item>

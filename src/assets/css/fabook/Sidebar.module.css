@@ -14,6 +14,7 @@
     font-size: 18px;
     padding: 12px;
     border-radius: 5px;
+    align-items: center;
 }
 
 .function_item p {
@@ -32,6 +33,7 @@
 .img_fun {
     width: 40px;
     border-radius: 50%;
+    height: 40px;
 }
 
 .img_fun img {
@@ -57,4 +59,50 @@
     float: left;
     flex-direction: column;
     padding-top: 16px;
+    row-gap: 10px;
+    width: 100%;
+}
+
+.group_item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.group_item img {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+
+}
+
+.group_item p {
+    margin: 0;
+}
+
+.groupSection_title {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0px 10px 0px;
+}
+
+p,h5 {
+    margin: 0;
+}
+
+.groupSection_title__btn {
+    color: rgb(39, 39, 196);
+    cursor: pointer;
+}
+
+.group_item:hover {
+    background: #6d6d6d;
+}
+
+.item {
+    color:white ;
+    text-decoration: none;
 }

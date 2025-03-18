@@ -2,6 +2,10 @@
     background: #646363;
 }
 
+.container {
+    padding: 16px;
+}
+
 .friend {
     display: flex;
     gap: 10px;

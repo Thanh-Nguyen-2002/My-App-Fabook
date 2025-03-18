@@ -66,9 +66,9 @@
 
 .icon_password {
     position: absolute;
-    top: 50%;
+    top: 0;
     right: 10px;
-    transform: translateY(-50%);
+    transform: translateY(0);
     cursor: pointer;
     font-size: 18px;
     color: #999;

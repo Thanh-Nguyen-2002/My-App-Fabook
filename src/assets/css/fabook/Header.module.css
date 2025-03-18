@@ -4,6 +4,8 @@
     width: 100vw;
     padding: 16px;
     box-sizing: border-box;
+    background: rgb(70, 72, 75);
+    min-width: 600px;
 }
 
 .container_left {
@@ -51,4 +53,80 @@
     border-radius: 50%;
     height: 100%;
     width: 100%;
+}
+
+.btn_logout {
+    padding: 10px;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.btn_logout:hover {
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+/* styles.module.css */
+
+.customMenu {
+    display: flex;
+    justify-content: center; /* hoặc space-between cũng được tùy style bạn muốn */
+    background-color: rgb(70, 72, 75);
+    border-bottom: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+}
+
+.customMenu .ant-menu-item {
+    font-size: 16px;
+    flex: 1; /* chia đều các item */
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    margin: 0 4px;
+}
+
+.customMenu .ant-menu-item a {
+    color: #ffffffd9;
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+}
+
+/* .customMenu .ant-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+} */
+
+.customMenu .ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+    border: 1px solid #1677ff;
+}
+
+.customMenu .ant-menu-item-selected a {
+    color: #1677ff;
+}
+
+
+.customMenu .ant-menu-item:hover {
+    background-color: rgba(22, 119, 255, 0.15); /* màu xanh nhạt */
+    border: 1px solid #1677ff; /* viền nổi bật khi hover */
+}
+
+.link_pages {
+    text-decoration: none;
+}
+
+@media (max-width : 1024px) {
+    .customMenu {
+        display: none;
+    }
 }
