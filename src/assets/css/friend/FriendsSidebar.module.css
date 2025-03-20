@@ -1,0 +1,37 @@
+.container {
+    color: white;
+}
+
+.friends_menu {
+    background: #2f2f2f;
+    color: rgb(152, 151, 151);
+}
+
+.icon {
+    color: rgb(152, 151, 151);
+}
+
+.text {
+    text-decoration: none;
+}
+
+.text span {
+    color: rgb(152, 151, 151);
+    float: left;
+    font-size: 18px;
+}
+
+.friends_header {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.friends_header h3 {
+    margin: 0;
+}
+.setting_btn {
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+}

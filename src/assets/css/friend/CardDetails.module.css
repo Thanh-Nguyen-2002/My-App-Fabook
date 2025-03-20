@@ -1,0 +1,75 @@
+.container {
+    min-width: 200px;
+    max-width: 220px;
+    border: 1px solid white;
+    height: 380px;
+    border-radius: 8px;
+}
+
+.card_img {
+    height: 55%;
+}
+
+.card_info {
+    height: 45%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.btn_card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btn_accept {
+    height: 40px;
+    width: 100%;
+    background: #263fff;
+    border-radius: 5px;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn_delete {
+    height: 40px;
+    width: 100%;
+    background: #534e4e;
+    border-radius: 5px;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.info_details {
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.info_details span {
+    font-weight: bold;
+}
+
+.btn_delete:hover {
+    transform: scale(1.01);
+    transition-duration: 0.3s;
+}
+
+.btn_accept:hover {
+    transform: scale(1.01);
+    transition-duration: 0.3s;
+}

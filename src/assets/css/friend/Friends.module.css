@@ -1,0 +1,21 @@
+.container {
+    display:  flex;
+    background: #000;
+    height: calc(100vh - 72px);
+}
+
+.friends_sidebar {
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width:  320px;
+    background: #2f2f2f;
+}
+
+.friends_content {
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    padding: 24px;
+    overflow: auto;
+}
+

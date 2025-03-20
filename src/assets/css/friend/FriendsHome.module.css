@@ -1,0 +1,15 @@
+.container h3 {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.crossbar {
+    height: 2px;
+    background: #979595;
+    width: 100%;
+    margin: 24px 0px;
+}
+
+.friends_request, .friends_suggestions {
+    padding: 10px;
+}

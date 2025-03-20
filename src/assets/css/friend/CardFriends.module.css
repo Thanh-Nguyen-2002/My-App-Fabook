@@ -1,0 +1,24 @@
+.cardDetail {
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cardDetail_info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.cardDetail_image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.cardDetail:hover {
+    background: #302f2f;
+}
